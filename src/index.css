@@ -1,13 +1,62 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat&display=swap');
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hind', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* font-family: 'Montserrat', sans-serif; */
+
+*/ body {
+  width: 100%;
+  height: 100%;
+}
+/*! *********** Landing Page Styles *********** !*/
+.landing {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.landing__bg {
+  position: fixed;
+  max-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-e0fa5.appspot.com/o/bg.webp?alt=media&token=ffdd3621-269c-441e-94ef-0c9f187fe0d5');
+  background-position: center center;
+  background-size: cover;
+}
+
+/*! *********** Navbar Styles *********** !*/
+.navbar {
+  z-index: 1;
+  min-height: 60px;
+}
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.navbar__logo {
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+.navbar__links {
+  display: flex;
+  margin-right: 1rem;
+}
+.navbar__link {
+  padding: 1rem;
+}
+.navbar__link a {
+  text-decoration: none;
+  color: white;
 }
